@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/*首页样式*/
+#index_boxs{background-color:#EEE; padding:5px; border-radius:5px; border:1px solid #DDD;}
+.index_box{line-height:2.0em;}
+#index_boxs, #index_boxb, #index_tool{display:none;}
