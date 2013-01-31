@@ -1,33 +1,46 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css">
-<link href="style/index.css" rel="stylesheet" type="text/css">
-<!--<link href="bg/style.css" rel="stylesheet" type="text/css">-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+	<link href="style/jquery.mobile-1.2.0.min.css" rel="stylesheet" type="text/css">
+	<link href="style/index.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
 </head>
 <body>
+	<!-- Home -->
+	<div data-role="page" id="index">
+		<div data-theme="b" data-role="header">
+			<h1>企信通</h1>
+		</div>
 
-<!--主页-->
-<div data-role="page" id="index">
-  <div data-role="header" data-theme="c">
-    <h1 id="index_title">^_^</h1>
-  </div>
-  
-  <div data-role="content" id="index_content">
-    <div id="index_boxs">
-      <div id="index_boxa" class="index_box"></div>
-      <div id="index_boxb" class="index_box"></div>
-    </div>
-    <div id="index_tool"><a href="javascript:;" data-role="button" id="index_next">NEXT</a></div>
-    <ul data-role="listview" data-inset="true" data-theme="c" id="index_channel"></ul>
-  </div>
-</div>
+		<div data-role="content">
+			<!-- Search Input -->
+			<input name="kw" placeholder="搜索" type="search" value="" id="index_search">
 
+			<!-- Search List -->
+			<div data-role="collapsible-set">
+				<div data-role="collapsible">
+					<h3>张飞</h3>
+					<p>I'm the collapsible set content for section 1.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>关羽</h3>
+					<p>I'm the collapsible set content for section 2.</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>刘备</h3>
+					<p>I'm the collapsible set content for section 3.</p>
+				</div>
+			</div>
+
+			<input type="button" value="生成数据库" id="index_cdb">
+			<input type="button" value="读取记录" id="index_rdb">
+		</div>
+	</div>
 </body>
 </html>
